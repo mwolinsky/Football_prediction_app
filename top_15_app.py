@@ -267,11 +267,11 @@ def main():
                       'red_cards_overall','minutes_played_overall','goals_overall','clean_sheets_away'])
             
 
-            html_object= eli5.show_prediction(model_def,test,show_feature_values=True,feature_names=['Minutes team Concede a goal', 
+            #html_object= eli5.show_prediction(model_def,test,show_feature_values=True,feature_names=['Minutes team Concede a goal', 
                       'Red Cards','Minutes played','Goals','Clean Sheets Away'])
 
-            raw_html = html_object._repr_html_()
-            components.html(raw_html,height=200)
+            #raw_html = html_object._repr_html_()
+            #components.html(raw_html,height=200)
             #show_prediction(model_def, np.array([min_per_conceded_overall,conceded_per_90_overall,goals_overall,minutes_played_overall,clean_sheets_away]), show_feature_values=True).format_as_html
             #st_shap(shap.force_plot(explainer_1.expected_value, shap_value, np.array([goals_per_90_overall_input,assists_per_90_overall_input,goals_involved_per_90_overall_input,goals_involved_per_90_overall_input,min_per_conceded_overall_input]).reshape(1,-1)))
             #components.html(exp.as_html(show_table=True), height=800)
@@ -307,11 +307,11 @@ def main():
        'assists_overall', 'min_per_conceded_overall', 'yellow_cards_overall' ])
             
 
-            html_object= eli5.show_prediction(model_mid,test,show_feature_values=True,feature_names=['Goals involved per match', 'Goals per Match',
+            #html_object= eli5.show_prediction(model_mid,test,show_feature_values=True,feature_names=['Goals involved per match', 'Goals per Match',
        'Assists', 'Minutes in which team conced a goal', 'Yellow Cards'])
 
-            raw_html = html_object._repr_html_()
-            components.html(raw_html,height=200)
+            #raw_html = html_object._repr_html_()
+            #components.html(raw_html,height=200)
             #st_shap(shap.force_plot(explainer_1.expected_value, shap_value, np.array([goals_per_90_overall_input,assists_per_90_overall_input,goals_involved_per_90_overall_input,goals_involved_per_90_overall_input,min_per_conceded_overall_input]).reshape(1,-1)))
             #components.html(exp.as_html(show_table=True), height=800)
     if position=="Forward":
@@ -357,8 +357,8 @@ def main():
 
             #raw_html = html_object._repr_html_()
             #components.html(raw_html,height=200)
-            st_shap(shap.force_plot(explainer_1.expected_value, shap_value, np.array([goals_per_90_overall_input,assists_per_90_overall_input,goals_involved_per_90_overall_input,goals_involved_per_90_overall_input,min_per_conceded_overall_input]).reshape(1,-1)))
-            components.html(exp.as_html(show_table=True), height=800)                                    
+            #st_shap(shap.force_plot(explainer_1.expected_value, shap_value, np.array([goals_per_90_overall_input,assists_per_90_overall_input,goals_involved_per_90_overall_input,goals_involved_per_90_overall_input,min_per_conceded_overall_input]).reshape(1,-1)))
+            #components.html(exp.as_html(show_table=True), height=800)                                    
 
 
 if __name__=='__main__': 
