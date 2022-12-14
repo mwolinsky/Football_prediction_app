@@ -267,8 +267,7 @@ def main():
                       'red_cards_overall','minutes_played_overall','goals_overall','clean_sheets_away'])
             
 
-            #html_object= eli5.show_prediction(model_def,test,show_feature_values=True,feature_names=['Minutes team Concede a goal', 
-                      'Red Cards','Minutes played','Goals','Clean Sheets Away'])
+            #html_object= eli5.show_prediction(model_def,test,show_feature_values=True,feature_names=['Minutes team Concede a goal','Red Cards','Minutes played','Goals','Clean Sheets Away'])
 
             #raw_html = html_object._repr_html_()
             #components.html(raw_html,height=200)
@@ -307,8 +306,7 @@ def main():
        'assists_overall', 'min_per_conceded_overall', 'yellow_cards_overall' ])
             
 
-            #html_object= eli5.show_prediction(model_mid,test,show_feature_values=True,feature_names=['Goals involved per match', 'Goals per Match',
-       'Assists', 'Minutes in which team conced a goal', 'Yellow Cards'])
+            #html_object= eli5.show_prediction(model_mid,test,show_feature_values=True,feature_names=['Goals involved per match', 'Goals per Match','Assists', 'Minutes in which team conced a goal', 'Yellow Cards'])
 
             #raw_html = html_object._repr_html_()
             #components.html(raw_html,height=200)
@@ -351,8 +349,7 @@ def main():
             test= pd.DataFrame(np.array([goals_per_90_overall, goals_involved_per_90_overall,min_per_conceded_overall,clean_sheets_away,penalty_goals]).reshape(1,-1), 
              columns=['goals_per_90_overall', 'goals_involved_per_90_overall','min_per_conceded_overall', 'clean_sheets_away', 'penalty_goals'])
             
-            #html_object= eli5.show_prediction(model_att,test,show_feature_values=True,feature_names=['Goals per match', 
-                      'Goals involved','Minutes teams conced a goal','Clean Sheets playing away','Penalty goals'])
+            #html_object= eli5.show_prediction(model_att,test,show_feature_values=True,feature_names=['Goals per match','Goals involved','Minutes teams conced a goal','Clean Sheets playing away','Penalty goals'])
             
 
             #raw_html = html_object._repr_html_()
