@@ -261,7 +261,7 @@ def main():
             st.success('The player is {}'.format(result)) 
         
         
-            st.subheader('Analizando la prediccion:')
+            #st.subheader('Analizando la prediccion:')
             test= pd.DataFrame(np.array([min_per_conceded_overall,red_cards_overall,minutes_played_overall,goals_overall,clean_sheets_away]).reshape(1,-1), 
              columns=['min_per_conceded_overall', 
                       'red_cards_overall','minutes_played_overall','goals_overall','clean_sheets_away'])
@@ -300,7 +300,7 @@ def main():
             st.success('The player is {}'.format(result)) 
         
         
-            st.subheader('Analizando la prediccion:')
+            #st.subheader('Analizando la prediccion:')
             test= pd.DataFrame(np.array([goals_involved_per_90_overall,goals_per_90_overall,assists_overall,min_per_conceded_overall,yellow_cards_overall]).reshape(1,-1), 
              columns=['goals_involved_per_90_overall', 'goals_per_90_overall',
        'assists_overall', 'min_per_conceded_overall', 'yellow_cards_overall' ])
@@ -345,7 +345,7 @@ def main():
             st.success('The player is {}'.format(result)) 
         
         
-            st.subheader('Analizando la prediccion:')
+            #st.subheader('Analizando la prediccion:')
             test= pd.DataFrame(np.array([goals_per_90_overall, goals_involved_per_90_overall,min_per_conceded_overall,clean_sheets_away,penalty_goals]).reshape(1,-1), 
              columns=['goals_per_90_overall', 'goals_involved_per_90_overall','min_per_conceded_overall', 'clean_sheets_away', 'penalty_goals'])
             
