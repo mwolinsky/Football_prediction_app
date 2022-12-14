@@ -6,3 +6,4 @@ streamlit>=1.12.2
 xgboost>=1.5.2
 lime>=0.2.0.1
 eli5==0.13.0
+streamlit.components.v1
