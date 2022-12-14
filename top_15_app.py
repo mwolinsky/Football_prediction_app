@@ -351,14 +351,14 @@ def main():
             test= pd.DataFrame(np.array([goals_per_90_overall, goals_involved_per_90_overall,min_per_conceded_overall,clean_sheets_away,penalty_goals]).reshape(1,-1), 
              columns=['goals_per_90_overall', 'goals_involved_per_90_overall','min_per_conceded_overall', 'clean_sheets_away', 'penalty_goals'])
             
-            html_object= eli5.show_prediction(model_att,test,show_feature_values=True,feature_names=['Goals per match', 
+            #html_object= eli5.show_prediction(model_att,test,show_feature_values=True,feature_names=['Goals per match', 
                       'Goals involved','Minutes teams conced a goal','Clean Sheets playing away','Penalty goals'])
             
 
-            raw_html = html_object._repr_html_()
-            components.html(raw_html,height=200)
-            #st_shap(shap.force_plot(explainer_1.expected_value, shap_value, np.array([goals_per_90_overall_input,assists_per_90_overall_input,goals_involved_per_90_overall_input,goals_involved_per_90_overall_input,min_per_conceded_overall_input]).reshape(1,-1)))
-            #components.html(exp.as_html(show_table=True), height=800)                                    
+            #raw_html = html_object._repr_html_()
+            #components.html(raw_html,height=200)
+            st_shap(shap.force_plot(explainer_1.expected_value, shap_value, np.array([goals_per_90_overall_input,assists_per_90_overall_input,goals_involved_per_90_overall_input,goals_involved_per_90_overall_input,min_per_conceded_overall_input]).reshape(1,-1)))
+            components.html(exp.as_html(show_table=True), height=800)                                    
 
 
 if __name__=='__main__': 
